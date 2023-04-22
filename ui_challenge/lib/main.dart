@@ -116,35 +116,29 @@ class App extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Transform.translate(
-                  offset: const Offset(0, 0),
-                  child: const CurrencyCard(
-                    icon: Icons.euro_outlined,
-                    isInverted: false,
-                    currentType: 'Euro',
-                    currentUnit: 'EUR',
-                    currentAmount: '6 428',
-                  ),
+                const CurrencyCard(
+                  order: 1,
+                  icon: Icons.euro_outlined,
+                  isInverted: false,
+                  currentType: 'Euro',
+                  currentUnit: 'EUR',
+                  currentAmount: '6 428',
                 ),
-                Transform.translate(
-                  offset: const Offset(0, -35),
-                  child: const CurrencyCard(
-                    icon: Icons.attach_money_outlined,
-                    isInverted: true,
-                    currentType: 'Dollar',
-                    currentUnit: 'USD',
-                    currentAmount: '55 622',
-                  ),
+                const CurrencyCard(
+                  order: 2,
+                  icon: Icons.attach_money_outlined,
+                  isInverted: true,
+                  currentType: 'Dollar',
+                  currentUnit: 'USD',
+                  currentAmount: '55 622',
                 ),
-                Transform.translate(
-                  offset: const Offset(0, -70),
-                  child: const CurrencyCard(
-                    icon: Icons.currency_rupee_outlined,
-                    isInverted: false,
-                    currentType: 'Rupee',
-                    currentUnit: 'INR',
-                    currentAmount: '28 981',
-                  ),
+                const CurrencyCard(
+                  order: 3,
+                  icon: Icons.currency_rupee_outlined,
+                  isInverted: false,
+                  currentType: 'Rupee',
+                  currentUnit: 'INR',
+                  currentAmount: '28 981',
                 ),
               ],
             ),
