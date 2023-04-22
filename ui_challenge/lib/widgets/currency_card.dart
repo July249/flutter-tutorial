@@ -72,7 +72,7 @@ class CurrencyCard extends StatelessWidget {
             Transform.scale(
               scale: 2.2,
               child: Transform.translate(
-                offset: const Offset(-2, 12),
+                offset: const Offset(5, 15),
                 child: Icon(
                   icon,
                   color: isInverted ? _blackColor : Colors.white,
